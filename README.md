@@ -8,7 +8,7 @@
 
 ## 소개
 
-TicTacToe 게임을 즐길 수 있는 iOS 앱입니다. 
+TicTacToe 게임을 가볍게 즐길 수 있는 iOS 앱입니다. 
 
 ## 사용한 기술
 
