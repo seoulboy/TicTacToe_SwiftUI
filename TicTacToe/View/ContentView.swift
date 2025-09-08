@@ -59,9 +59,10 @@ struct ContentView: View {
                 Spacer()
             }
         }
-        .alert("That Square is already Taken. Select Another Square!",
+        .alert("That square is already taken",
                isPresented: $viewModel.isShowingAlreadySelectedAlert,
-               actions: {})
+               actions: {},
+               message: { Text("Try selecting another square!") })
         .alert("Game Over!",
                isPresented: $viewModel.isShowingGameOverAlert,
                actions: { Button("OK") { viewModel.restart() } },
@@ -80,7 +81,6 @@ struct GridCellView: View {
         ZStack {
             color
                 .aspectRatio(1.0, contentMode: .fit)
-                .onTapGesture(perform: action)
             
             if isSelected, let imageName {
                 Image(systemName: imageName)
@@ -89,6 +89,7 @@ struct GridCellView: View {
                     .foregroundStyle(.white)
             }
         }
+        .onTapGesture(perform: action)
         
     }
 }
