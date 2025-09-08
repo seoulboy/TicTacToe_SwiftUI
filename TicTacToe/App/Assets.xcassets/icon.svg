@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- Rounded background (iOS will mask corners; I still make a rounded rect) -->
+  <rect x="0" y="0" width="1024" height="1024" rx="180" ry="180" fill="#2F7BFF"/>
+
+  <!-- Grid layout parameters:
+       startX = 132, startY = 132, cell = 220, gap = 20
+  -->
+  <!-- Helper: draw the 9 tiles -->
+  <!-- Row 1 (red) -->
+  <rect x="132" y="132" width="220" height="220" fill="#E74C3C" />
+  <rect x="372" y="132" width="220" height="220" fill="#E74C3C" />
+  <rect x="612" y="132" width="220" height="220" fill="#E74C3C" />
+
+  <!-- Row 2 (orange) -->
+  <rect x="132" y="372" width="220" height="220" fill="#F39C12" />
+  <rect x="372" y="372" width="220" height="220" fill="#F39C12" />
+  <rect x="612" y="372" width="220" height="220" fill="#F39C12" />
+
+  <!-- Row 3 (green) -->
+  <rect x="132" y="612" width="220" height="220" fill="#2ECC71" />
+  <rect x="372" y="612" width="220" height="220" fill="#2ECC71" />
+  <rect x="612" y="612" width="220" height="220" fill="#2ECC71" />
+
+  <!-- Symbols: center positions for each cell -->
+  <!-- Stroke settings for X and O -->
+  <g stroke="#FFFFFF" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Row1 Col1: O -->
+    <circle cx="242" cy="242" r="64" />
+    <!-- Row1 Col3: O -->
+    <circle cx="722" cy="242" r="64" />
+
+    <!-- Row2 Col2: X -->
+    <line x1="422" y1="422" x2="542" y2="542" />
+    <line x1="542" y1="422" x2="422" y2="542" />
+
+    <!-- Row3 Col2: X -->
+    <line x1="422" y1="662" x2="542" y2="782" />
+    <line x1="542" y1="662" x2="422" y2="782" />
+  </g>
+</svg>
