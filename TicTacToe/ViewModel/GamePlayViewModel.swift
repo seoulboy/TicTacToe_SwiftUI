@@ -7,21 +7,21 @@
 
 import SwiftUI
 
-final class ViewModel: ObservableObject {
+final class GamePlayViewModel: ObservableObject {
     
     @Published var isShowingAlreadySelectedAlert = false
     @Published var isShowingGameOverAlert = false
     @Published var items: [Item]
+    @Published var currentPlayer: Player
     
     var winner: Player?
     var result: GameResult?
-    var currentPlayer: Player
     
     let player1 = Player(name: "Player 1", systemImageName: "circle")
     let player2 = Player(name: "Player 2", systemImageName: "xmark")
     
     init() {
-        self.items = ViewModel.getInitialItems()
+        self.items = GamePlayViewModel.getInitialItems()
         self.currentPlayer = player1
     }
     
@@ -42,7 +42,7 @@ final class ViewModel: ObservableObject {
     }
     
     func restart() {
-        items = ViewModel.getInitialItems()
+        items = GamePlayViewModel.getInitialItems()
         winner = nil
         result = nil
         currentPlayer = player1
@@ -50,7 +50,7 @@ final class ViewModel: ObservableObject {
     
     private static func getInitialItems() -> [Item] {
         Array(0..<9).map { index in
-            Item(index: index, color: ViewModel.getColorForIndex(index), player: nil)
+            Item(index: index, color: GamePlayViewModel.getColorForIndex(index), player: nil)
         }
     }
 

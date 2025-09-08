@@ -17,7 +17,7 @@ struct Item: Equatable, Hashable {
     }
     
     static func == (lhs: Self, rhs: Self) -> Bool {
-        lhs.index == rhs.index
+        lhs.index == rhs.index && lhs.player == rhs.player
     }
     
     func hash(into hasher: inout Hasher) {
