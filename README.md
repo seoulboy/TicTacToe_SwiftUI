@@ -1,8 +1,14 @@
+# TicTacToe
+
+<img src="https://github.com/user-attachments/assets/f937d18c-c53f-40d9-89e9-138569fe0d5d" width="200"/>
+
+## 샘플 앱 화면 
+
 <img src="https://velog.velcdn.com/images/devapploper/post/c600a92c-f823-42c8-a06b-18579372ebfd/image.png" width="600"/>
 
 ## 소개
 
-TicTacToe 게임을 플레이할 수 있는 iOS 앱입니다. 
+TicTacToe 게임을 즐길 수 있는 iOS 앱입니다. 
 
 ## 사용한 기술
 
