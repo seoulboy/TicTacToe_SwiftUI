@@ -9,6 +9,7 @@
 ## 소개
 
 TicTacToe 게임을 가볍게 즐길 수 있는 iOS 앱입니다. 
+
 @ObservableObject, @StateObject, @State, @Binding 등을 사용하여 SwiftUI스럽게 구현하는 것에 초점을 맞췄습니다.
 
 ## 사용한 기술
